@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactenos</title>
+</head>
+<body>
+<!-- Encabezado -->
+    <HEAder>
+        <h1 style="font-size: 2en; color: tomato;">Triple Hash</h1>
+        <h2>Seguridad, Calidad y Garantía</h2> <!-- Título 2 -->
+    </HEAder>
+     <!-- Navigation -->
+     <nav>
+        <p><a href="index.html">Volver atrás</a></p> <!-- Anchor (a) -->
+     </nav>
+     <!-- Cuerpo principal -->
+     <main>
+        <!-- Formulario de contacto -->
+        <section id="formContacto">
+            <h3>Escribenos ahora</h3>
+        <!-- Formulario -->
+        <form action="contactoRegistro.html" method="get">
+            <div>
+                <label for="txtNombre">Ingrese su nombre</label>
+                <input type="text" name="txtNombre" id="txtNombre" maxlength="50" required>
+            </div>
+            <div>
+                <label for="txtApellido">Ingrese su apellido</label>
+                <input type="text" name="txtApellido" id="txtapellido" autocomplete="off" maxlength="54">
+            </div>
+            <div>
+                <label for="txtEmail">Ingrese su correo electrónico</label>
+                <input type="email" name="txtEmail" id="txtEmail" autocomplete="off" maxlength="128" required>
+            </div>
+            <div>
+                <label for="numPhone">Ingrese su teléfono o celular</label>
+                <input type="text" name="txtPhone" id="numPhone" maxlength="13" minlength="7">
+                
+            </div>
+            <!-- Select / selección de valor -->
+            <div>
+                <label for="txtAsunto">Seleccione su Asunto</label>
+                <select name="txtasunto" id="txtAsunto" required>
+                    <option value="">Seleccione una opción...</option>
+                    <option value="compraMayor">Comprar productos por Mayor</option>
+                    <option value="consultadevolución">Consulta para devolución del producto</option>
+                    <option value="consulta general">Hacer consulta general </option>
+                </select>
+            </div>
+            <!-- TextArea Cuerpo de texto -->
+            <div>
+                <label for="bodyDetalle">Ingrese su mensaje</label>
+                <textarea name="bodyDetalle" id="" cols="30" rows="8" required></textarea>
+            </div>
+            <!-- Input Checkbox -->
+            <div>
+                <input type="checkbox" name="bolAutorizo" id="bolAutorizo" required>
+                <label for="bolAutorizo">Autorizo el envío de publicidad e información comercial</label>
+            </div>
+            <!-- Input Submit Boton de enviar -->
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+        </section>
+        <!-- Datos de contacto -->
+        <section id="ubicanos">
+            <p>Av. Belisario Suarez 1075 <br>
+                San Juan de Miraflores - Lima - Perú
+            </p>
+            <p> Teléfono: 01 680 9999 / 999 555 555</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1680160760507!6m8!1m7!1sjjSMNkE3DN3q3ByxuxcU7A!2m2!1d-12.1635962688678!2d-76.96354763644223!3f22.114124!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+     </main>
+</body>
+</html>
